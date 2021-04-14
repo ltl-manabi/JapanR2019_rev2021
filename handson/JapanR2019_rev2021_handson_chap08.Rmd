@@ -1,0 +1,69 @@
+---
+title: "RMarkdownのサンプル"
+date: "2021-04-15"
+author: "Your Name"
+output: html_document
+---
+
+## RMarkdownとは
+
+RMarkdownはIT業界で広く使われる**Markdown**を使い、文章とプログラムを混在させてドキュメントを作成できる仕組みです。
+
+## Markdownとは
+
+Markdownについては、多数の情報がありますので、[Markdown記法 チートシート](https://qiita.com/Qiita/items/c686397e4a0f4f11683d)などから、さまざまなリソースにアクセスしてみてください。なお、Markdownの細かい部分には「方言」があり、RMarkdownでは動作しない記述もあります。以下のように、テキストエディタだけでシンプルに記述できます。
+
+※Markdownの例として示しているので、画面ではフォーマットされず、そのまま出力されます。
+
+```
+# 大見出し (H1)
+
+地の文
+
+## 中見出し (H2)
+
+地の文
+
+[リンク](https://www.google.co.jp/)
+
+### 箇条書き
+
+* 項目
+* 項目
+
+1. 項目
+1. 項目
+1. 自動的に採番される
+
+### 画像
+
+![](https://www.r-project.org/logo/Rlogo.png)
+```
+
+## チャンクとは
+
+RMarkdownでは、**チャンク**という要素にRプログラムを記述すると、プログラムを実行し、結果をドキュメントに含めることができます。チャンクは、以下のように記述します。
+
+```{r eval=TRUE, message=FALSE, warning=FALSE}
+a <- 1:10
+a
+```
+
+RStudioでは、チャンクにカーソルを合わせた状態で `Ctrl + Alt + c` キーを押すと、そのチャンクのみコンソールで実行できます。
+
+グラフィックスも、チャンクの実行結果として出力されます。
+
+```{r eval=TRUE, message=FALSE, warning=FALSE}
+library(ggplot2)
+
+ggplot(airquality, aes(x = Solar.R, y = Ozone)) + geom_point()
+```
+
+## 他の言語によるプログラムの実行
+
+RMarkdownでは、Rだけでなく、Python言語などによるプログラムも混在して記述できます。Pythonプログラムを実行するには、AnacondaなどPython環境が必要です。RStudio CloudにはあらかじめPythonがインストールされています。
+
+```{python eval=TRUE, message=FALSE, warning=FALSE}
+a = [1, 3, 5, 7]
+print(a[0])
+```
