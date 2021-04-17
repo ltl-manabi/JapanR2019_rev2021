@@ -6,7 +6,7 @@
 </div>
 
 <div align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLwFsIV93-oVKd_yvB2cGcdaA0o1yzNmdY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<a href="https://www.youtube.com/watch?v=W67ItfyWJ-I&list=PLwFsIV93-oVKd_yvB2cGcdaA0o1yzNmdY&index=1"><img src="./image/movie_thumb.png" width="70%"></a>
 </div>
 
 Rをはじめて学ぶ方向けのコンテンツである "Japan.R 2019 今日からはじめるR 2021改訂版" のリポジトリです。動画コンテンツで使用しているスライドのソースコード (`.Rmd`) やハンズオンのためのプログラムを公開しています。なお、PowerPointテンプレート (商用フォント使用) はアップロードしていないため、そのままでは (意図したデザインでは) コンパイルできません。
