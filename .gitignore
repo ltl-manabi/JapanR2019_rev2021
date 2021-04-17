@@ -38,5 +38,5 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# PowerPoint template
-Rmd_Blackboard_template.pptx
+# PowerPoint files
+*.pptx
